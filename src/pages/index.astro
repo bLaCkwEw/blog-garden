@@ -1,16 +1,40 @@
 ---
-
+import BaseLayout from "./layouts/BaseLayout.astro";
+import Post from "../components/Post.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home Page">
+  <h1>Helloaa!</h1>
+  <Post
+    title="Post Title"
+    author="Mike Ock"
+    date_pub="2025-08-12"
+    date_updated="2025-08-15"
+  >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim minus
+      officia sunt ipsam, molestias nobis magnam ad dolorem deleniti quidem
+      minima veritatis, provident commodi! Modi fugit itaque a ab.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim minus
+      officia sunt ipsam, molestias nobis magnam ad dolorem deleniti quidem
+      minima veritatis, provident commodi! Modi fugit itaque a ab.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim minus
+      officia sunt ipsam, molestias nobis magnam ad dolorem deleniti quidem
+      minima veritatis, provident commodi! Modi fugit itaque a ab.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim minus
+      officia sunt ipsam, molestias nobis magnam ad dolorem deleniti quidem
+      minima veritatis, provident commodi! Modi fugit itaque a ab.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim minus
+      officia sunt ipsam, molestias nobis magnam ad dolorem deleniti quidem
+      minima veritatis, provident commodi! Modi fugit itaque a ab.
+    </p>
+  </Post>
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+const { title, author, date_pub, date_updated } = Astro.props;
+---
+
+<article>
+  <h2>{title}</h2>
+  <p>{author}</p>
+  <time datetime={date_updated}>{date_updated}</time>
+  <time datetime={date_pub}>{date_pub}</time>
+  <slot />
+</article>
