@@ -1,6 +1,11 @@
 ---
+import { Font } from "astro:assets";
+
 const { title, author, date_pub, date_updated } = Astro.props;
 ---
+
+<Font cssVariable="--font-headings" />
+<Font cssVariable="--font-text" />
 
 <article>
   <h2 class="title">{title}</h2>
