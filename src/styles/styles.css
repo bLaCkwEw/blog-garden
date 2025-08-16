@@ -41,6 +41,21 @@ article {
   margin: 0 0.5ch;
 }
 
+article .metadata {
+  font-size: 0.8em;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  margin: calc(2 * var(--unit)) 0;
+}
+
+article .metadata .author {
+  margin: 0;
+  padding-right: calc(2 * var(--unit));
+  margin-right: calc(2 * var(--unit));
+  border-right: var(--clr-brown) solid calc(0.5 * var(--unit));
+}
+
 article p {
   margin-top: calc(4 * var(--unit));
 }
