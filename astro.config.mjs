@@ -29,6 +29,7 @@ export default defineConfig({
             src: [ "./src/fonts/Texturina-VariableFont_opsz,wght.ttf" ],
           },
         ],
+        fallbacks: ["serif"],
       },
       {
         name: "Outfit",
@@ -39,7 +40,7 @@ export default defineConfig({
             src: [ "./src/fonts/Outfit-VariableFont_wght.ttf" ],
           },
         ],
-
+        fallbacks: ["sans-serif"],
       },
     ],
   },
