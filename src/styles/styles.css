@@ -2,7 +2,7 @@
   font-size: 20px;
   --unit: 4px;
   --clr-text: #371e06;
-  --clr-green: #228b22;
+  --clr-green: #63b76c;
   --clr-green-dark: #008001;
   --clr-green-light: #9acd32;
   --clr-article-bg: #fdd5b1;
@@ -17,6 +17,11 @@ html {
   font-family: var(--font-text);
   font-size: var(--font-md);
   color: var(--clr-text);
+}
+
+body {
+  background-color: var(--clr-green);
+  background-image: url(./imgs/garden-blog-grass-tile.webp);
 }
 
 a {
