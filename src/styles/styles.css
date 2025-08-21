@@ -69,3 +69,50 @@ article .metadata .author {
 article p {
   margin-top: calc(4 * var(--unit));
 }
+
+.footer {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.footer .sand {
+  position: relative;
+  width: 100%;
+  height: 15ch;
+  background-image: url("./imgs/garden-blog-sand-tile.webp");
+  background-size: 64px;
+}
+
+.footer .sand::before {
+  content: "";
+  background-image: url("./imgs/garden-blog-surface-algae-tile.webp");
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  top: -24px;
+}
+
+.footer .sand::after {
+  content: "";
+  background-image: url("./imgs/garden-blog-surface-algae-tile.webp");
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .water {
+  width: 100%;
+  height: 5ch;
+  background-image: url("./imgs/garden-blog-water-tile.webp");
+  background-size: 64px;
+}
+
+.footer .water::before {
+  content: "";
+  display: flex;
+  background-image: url("./imgs/garden-blog-surface-algae-tile.webp");
+  width: 100%;
+  height: 24px;
+  transform: rotate(180deg);
+}
